@@ -2,6 +2,7 @@ lint: ##should fail when the linter catches and error
 	@golangci-lint run
 
 build: ##compile the source code of the application to a binary
+	@make lint
 	@go build
 
 run: ##run the application in the background
