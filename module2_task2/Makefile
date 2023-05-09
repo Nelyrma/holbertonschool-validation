@@ -19,5 +19,8 @@ test: ##test to insure that it behaves as expected
 	@curl http://localhost:9999
 	@curl http://localhost:9999/health
 
+unit-tests: ##execute the Golang unit tests
+	@go test -v -short -coverprofile=coverage-units.out
+
 help: ##print a list of all the goals with a sentence each
 	@cat Makefile | grep "^\w*:.*##.*" | sed 's/## //'
