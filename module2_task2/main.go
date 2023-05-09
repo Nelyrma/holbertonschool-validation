@@ -28,6 +28,10 @@ func setupRouter() *mux.Router {
   // When an HTTP GET request is received on the path /health, delegates to the function "HealthCheckHandler()"
   r.HandleFunc("/health", HealthCheckHandler).Methods("GET")
 
+  // when an HTTP GET request is received on the path /hello
+  r.HandleFunc("/hello", HelloHandler).Methods("GET")
+
+
   return r
 }
 
@@ -70,6 +74,3 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
   // Print a line in the ACCESS log
   fmt.Printf("HIT: hello handler with name %s \n", name)
 }
-
-// when an HTTP GET request is received on the path /hello
-  r.HandleFunc("/hello", HelloHandler).Methods("GET")
