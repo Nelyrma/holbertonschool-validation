@@ -23,4 +23,4 @@ unit-tests: ##execute the Golang unit tests
 	@go test -v -short -coverprofile=coverage-units.out
 
 help: ##print a list of all the goals with a sentence each
-	@cat Makefile | grep "^\w*:.*##.*" | sed 's/## //'
+	@grep "##" Makefile | head -n -1 | tr -d '#'
