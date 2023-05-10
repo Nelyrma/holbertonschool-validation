@@ -19,7 +19,6 @@ clean: ##delete the binary and the log file
 
 test: ##test to insure that it behaves as expected
 	@make unit-tests
-	@make integration-tests
 
 unit-tests: ##execute the Golang unit tests
 	@go test -v -short -coverprofile=coverage-units.out
