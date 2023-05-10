@@ -25,7 +25,7 @@ unit-tests: ##execute the Golang unit tests
 	@go test -v -short -coverprofile=coverage-units.out
 
 integration-tests: ##execute the Golang integration tests
-	@go test -v -short -coverprofile=coverage-integrations.out
+	@go test -v -coverprofile=coverage-integrations.out
 
 help: ##print a list of all the goals with a sentence each
 	@grep "##" Makefile | head -n -1 | tr -d '#'
