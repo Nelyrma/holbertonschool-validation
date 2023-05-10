@@ -13,7 +13,7 @@ stop: ##stop the application
 
 clean: ##delete the binary and the log file
 	@rm -rf awesome-api
-	@rm awesome-api.log
+	@rm  -rf awesome-api.log
 	@rm coverage-units.out
 	@rm coverage-integrations.out
 
