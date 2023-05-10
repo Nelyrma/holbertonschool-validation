@@ -35,7 +35,7 @@ func Test_server(t *testing.T) {
       name:         "Hello pa ge",
       URI:          "/hello?name=Holber ton",
       responseCode: 400,
-      body:         "400 Bad request",
+      body:         "400 Bad Request",
     },
     {
       name:         "Empty page",
@@ -44,13 +44,13 @@ func Test_server(t *testing.T) {
       body:         "404 page not found\n",
     },
     {
-      name:         "Empty name",
-      URI:          "/hello?name=",
+      name:         "No name",
+      URI:          "/hello?name",
       responseCode: 400,
     },
     {
-      name:         "No name",
-      URI:          "/hello?name",
+      name:         "Empty name",
+      URI:          "/hello?name=",
       responseCode: 400,
     },
     {
@@ -66,7 +66,7 @@ func Test_server(t *testing.T) {
       body:         "404 page not found\n",
     },
     {
-      name:         "Hello there",
+      name:         "hello there",
       URI:          "/hello",
       responseCode: 200,
       body:         "Hello there!",
