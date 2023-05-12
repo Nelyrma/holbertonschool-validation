@@ -14,7 +14,7 @@ check: ## should fail when one of the steps fails
 	markdown-link-check ./content/posts/*.md
 
 validate: ## validate the file ./dist/index.html
-	python3 /opt/W3C-Validator/w3c_validator.py dist/index.html
+	-./w3c_validator.py ./dist/index.html
 
 help: ## Show this help usage
 	-grep "##" Makefile | head -n -1 | tr -d '#'
