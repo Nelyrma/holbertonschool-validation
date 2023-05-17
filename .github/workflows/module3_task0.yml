@@ -7,7 +7,7 @@ on:
       - 'module3_task0/**'
   schedule:
     - cron: '0 0 * * *'
-    
+
 # Jobs has two steps, clone the repo and execute 'make help'
 jobs:
   build:
