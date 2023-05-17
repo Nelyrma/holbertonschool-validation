@@ -12,5 +12,5 @@ post: ## Create a new blog post using POST_TITLE and POST_NAME env variables
 
 help: ## Show this help usage
 	@echo "Usage: make <command>"
-#	@echo "-----"
+	@echo "-----"
 	@cat Makefile | grep "^\w*:.*##.*" | sed 's/## //'
