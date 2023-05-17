@@ -19,7 +19,7 @@ Empathy as Code: Inline Help, Comment and Documentation
 
 - **help** : prints out the list of targets and their usage.
 
-## Workflow
+## Build Workflow
 
 - Clone the repository (checkout)
 - Change to the appropriate directory and execute make help
